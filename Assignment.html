@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Names Starting with 'A'</title>
+</head>
+<body>
+    <h2>Count Names Starting with 'A'</h2>
+    <p id="result"></p>
+    <script>
+        var students = ["Anna", "Arun", "Bella", "Anita", "Brian"];
+        var count = 0;
+        var letter = 'A'; 
+        
+        for(var i = 0; i < students.length; i++) {
+            if(students[i].charAt(0).toUpperCase() === letter.toUpperCase()) {
+                count++;
+            }
+        }
+        
+        document.getElementById("result").innerHTML = `Names starting with '${letter}': ${count}`;
+    </script>
+</body>
+</html>
